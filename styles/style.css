@@ -2,6 +2,14 @@ html {
 	font-size: 16px;
 }
 
+body{
+	background: white;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+}
 p{
 	margin:0;
 	display:block;
@@ -10,7 +18,7 @@ p{
 .NavContainer{
 	position: fixed;
 	width: 20%;
-	background: green;
+	background: white;
 	font-size: 1em;
 	height: 100%;
 }
@@ -19,19 +27,36 @@ p{
 	margin-top: 100%;
  }
 
-.NavContainer-List-Item{
+.NavContainer-List-Button{
 	top:50%;
 	text-align: center;
-	padding: 0;
+	border: solid black 2px;
+	border-bottom: none;
+	border-right: none;
+	padding: 1em 0;
+	margin: 0;
 	background:grey;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px 0 0 5px;
 }
+
+ .NavContainer-List:last-child{
+ 	border-bottom: solid black 2px;
+ 	border-radius: 20px 0 0 5px;
+ }
+
 .MainContainer{
 	position:absolute;
 	left:20%;
-	width: 80%;
-	top:0;
-	bottom:0;
+	width: 78%;
+	top:5%;
+	bottom:5%;
+	right: 5%;
 	background: grey;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	font-size: 1em;
 }
 
