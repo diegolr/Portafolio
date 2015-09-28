@@ -1,0 +1,23 @@
+html {
+	font-size: 16px;
+}
+
+.Main{
+	display:table;
+	background: red;
+	padding: 0 auto;
+}
+
+.Main-Nav{
+	display:table-cell;
+	width: 25%;
+	background: green;
+	font-size: 1em;
+}
+
+.Main-Section{
+	display:table-cell;
+	width: 75%;
+	background: yellow;
+	font-size: 1em;
+}
