@@ -2,22 +2,41 @@ html {
 	font-size: 16px;
 }
 
-.Main{
-	display:table;
-	background: red;
-	padding: 0 auto;
+p{
+	margin:0;
+	display:block;
 }
 
-.Main-Nav{
-	display:table-cell;
-	width: 25%;
+.NavContainer{
+	position: fixed;
+	width: 20%;
 	background: green;
 	font-size: 1em;
+	height: 100%;
+}
+ .NavContainer-List{
+ 	display:block;
+	margin-top: 100%;
+ }
+
+.NavContainer-List-Item{
+	top:50%;
+	text-align: center;
+	padding: 0;
+	background:grey;
+}
+.MainContainer{
+	position:absolute;
+	left:20%;
+	width: 80%;
+	top:0;
+	bottom:0;
+	background: grey;
+	font-size: 1em;
 }
 
-.Main-Section{
-	display:table-cell;
-	width: 75%;
+.MainContainer-Content{
 	background: yellow;
-	font-size: 1em;
+	margin:5%;
+
 }
