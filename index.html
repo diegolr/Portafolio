@@ -3,25 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles/vendors/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-
-		<nav class="NavContainer">
-			<li class="NavContainer-List">
-				<ul><button class="NavContainer-List-Button" type="button">Información personal</button></ul>
-				<ul><button class="NavContainer-List-Button" type="button">Cualificaciones</button></ul>
-				<ul><button class="NavContainer-List-Button" type="button">Trabajos</button></ul>
-				<ul><button class="NavContainer-List-Button" type="button">Contacto</button></ul>
+	<nav class="NavContainer">
+		<ul class="NavContainer-List">
+			<li class="NavContainer-Item">
+				<button class="NavContainer-Item-Button" type="button" data-button="me">
+					<span class="icon-user"></span>
+				</button>
 			</li>
-		</nav>
-		<main class="MainContainer">
-			<section class="MainContainer-Content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor eius maxime a mollitia, aspernatur ullam? Quod explicabo error numquam ipsum, consectetur maiores. Est cumque id sit quasi quidem consequatur!</p>
-			</section>
-			
-		</main>
-	
+			<li class="NavContainer-Item">
+				<button class="NavContainer-Item-Button" type="button" data-button="studies">
+					<span class="icon-study"></span>
+				</button>
+			</li>
+			<li class="NavContainer-Item">
+				<button class="NavContainer-Item-Button" type="button" data-button="portfolio">
+					<span class="icon-wallet"></span>
+				</button>
+			</li>
+			<li class="NavContainer-Item">
+				<button class="NavContainer-Item-Button" type="button" data-button="contact">
+					<span class="icon-mail"></span>
+				</button>
+			</li>
+		</ul>
+	</nav>
+	<main class="MainContainer">
+		<section class="MainContainer-Content" id="main">
+		</section>	
+	</main>
+
+	<script src="js/vendors/jquery-1.11.3.min.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>

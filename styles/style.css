@@ -3,7 +3,7 @@ html {
 }
 
 body{
-	background: white;
+	background: black;
 }
 
 ul{
@@ -17,51 +17,125 @@ p{
 
 .NavContainer{
 	position: fixed;
-	width: 20%;
-	background: white;
-	font-size: 1em;
+	top: 5%;
+	bottom: 5%;
+	left:5%;
+	width: 10%;
+	background: black;
+	font-size: 1.5em;
+}
+.NavContainer-List{
 	height: 100%;
 }
- .NavContainer-List{
- 	display:block;
-	margin-top: 100%;
+ .NavContainer-Item{
+ 	height: 25%;
+ 	text-align: center;
+	border:none;
  }
 
-.NavContainer-List-Button{
-	top:50%;
-	text-align: center;
-	border: solid black 2px;
-	border-bottom: none;
-	border-right: none;
-	padding: 1em 0;
-	margin: 0;
-	background:grey;
-	height: 100%;
+/*Non aplica border radius first child*/
+.NavContainer-Item:first-child{
+	background:#FF9C00;
+	-webkit-border-radius: 15px 0 0 0;
+	-moz-border-radius: 15px 0 0 0;
+	border-radius: 15px 0 0 0;
+}
+
+.NavContainer-Item:nth-child(2){
+ 	background: white;
+}
+
+.NavContainer-Item:nth-child(3){
+ 	background: white;
+}
+
+.NavContainer-Item:last-child{
+ 	background: white;
+ 	-webkit-border-radius: 0 0 0 15px;
+	-moz-border-radius: 0 0 0 15px;
+	border-radius: 0 0 0 15px;
+
+}
+
+.NavContainer-Item-Button{
+	border:none;
 	width: 100%;
-	border-radius: 20px 0 0 5px;
+	height: 100%;
+	padding: 1em 0;
+	background: none;
+	margin: 0;
 }
 
- .NavContainer-List:last-child{
- 	border-bottom: solid black 2px;
- 	border-radius: 20px 0 0 5px;
- }
+.NavContainer-Item-Text{
+	border:none;
+	width: 100%;
+	height: 100%;
+	padding: 1em 0;
+	background: none;
+	margin: 0;
+}
+
+
+
 
 .MainContainer{
 	position:absolute;
-	left:20%;
-	width: 78%;
+	display:block;
+	left:15%;
+	width: 80%;
 	top:5%;
-	bottom:5%;
 	right: 5%;
-	background: grey;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	min-height: 90%;
+	background: #FF9C00;
+	-webkit-border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	border-radius: 0 15px 15px 0;
 	font-size: 1em;
 }
 
 .MainContainer-Content{
+	display:inline-block;
 	background: yellow;
 	margin:5%;
 
+}
+
+/*Fonts*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?a9za75');
+	src:url('../fonts/icomoon.eot?#iefixa9za75') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?a9za75') format('truetype'),
+		url('../fonts/icomoon.woff?a9za75') format('woff'),
+		url('../fonts/icomoon.svg?a9za75#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+	content: "\e600";
+}
+.icon-mail:before {
+	content: "\e601";
+}
+.icon-study:before {
+	content: "\e602";
+}
+.icon-wallet:before {
+	content: "\e603";
 }
