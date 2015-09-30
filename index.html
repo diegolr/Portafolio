@@ -9,32 +9,20 @@
 </head>
 <body>
 	<nav class="NavContainer">
-		<ul class="NavContainer-List">
-			<li class="NavContainer-Item">
-				<button class="NavContainer-Item-Button" type="button" data-button="me">
-					<span class="icon-user"></span>
-				</button>
-			</li>
-			<li class="NavContainer-Item">
-				<button class="NavContainer-Item-Button" type="button" data-button="studies">
-					<span class="icon-study"></span>
-				</button>
-			</li>
-			<li class="NavContainer-Item">
-				<button class="NavContainer-Item-Button" type="button" data-button="portfolio">
-					<span class="icon-wallet"></span>
-				</button>
-			</li>
-			<li class="NavContainer-Item">
-				<button class="NavContainer-Item-Button" type="button" data-button="contact">
-					<span class="icon-mail"></span>
-				</button>
-			</li>
-		</ul>
+		<button class="NavContainer-Button NavContainer-Button-First" type="button" data-button="me">
+			<span class="icon-user"></span>
+		</button>
+		<button class="NavContainer-Button" type="button" data-button="studies">
+			<span class="icon-study"></span>
+		</button>
+		<button class="NavContainer-Button" type="button" data-button="portfolio">
+			<span class="icon-wallet"></span>
+		</button>
+		<button class="NavContainer-Button NavContainer-Button-Last" type="button" data-button="contact">
+			<span class="icon-mail"></span>
+		</button>
 	</nav>
-	<main class="MainContainer">
-		<section class="MainContainer-Content" id="main">
-		</section>	
+	<main class="MainContainer" id="main">
 	</main>
 
 	<script src="js/vendors/jquery-1.11.3.min.js"></script>

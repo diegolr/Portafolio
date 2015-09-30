@@ -15,6 +15,8 @@ p{
 	display:block;
 }
 
+
+/*Nav clases*/
 .NavContainer{
 	position: fixed;
 	top: 5%;
@@ -24,63 +26,56 @@ p{
 	background: black;
 	font-size: 1.5em;
 }
-.NavContainer-List{
-	height: 100%;
-}
- .NavContainer-Item{
- 	height: 25%;
- 	text-align: center;
-	border:none;
- }
 
-/*Non aplica border radius first child*/
-.NavContainer-Item:first-child{
-	background:#FF9C00;
+.NavContainer-Button-First{
+	background: #FF9C00;
 	-webkit-border-radius: 15px 0 0 0;
 	-moz-border-radius: 15px 0 0 0;
 	border-radius: 15px 0 0 0;
 }
 
-.NavContainer-Item:nth-child(2){
- 	background: white;
-}
-
-.NavContainer-Item:nth-child(3){
- 	background: white;
-}
-
-.NavContainer-Item:last-child{
- 	background: white;
+.NavContainer-Button-Last{
  	-webkit-border-radius: 0 0 0 15px;
 	-moz-border-radius: 0 0 0 15px;
 	border-radius: 0 0 0 15px;
 
 }
 
-.NavContainer-Item-Button{
+.NavContainer-Button__active{
+	background:#FF9C00;
+}
+
+.NavContainer-Button__noActive{
+	background: white;
+}
+
+.NavContainer-Button{
+	border:none;
+	display: block;
+	width: 100%;
+	height: 25%;
+	padding: 1em 0;
+	margin: 0;
+}
+
+.NavContainer-Button:focus{
+	outline: 0;
+}
+
+/*Provisional*/
+/*.NavContainer-Text{
 	border:none;
 	width: 100%;
 	height: 100%;
 	padding: 1em 0;
 	background: none;
 	margin: 0;
-}
-
-.NavContainer-Item-Text{
-	border:none;
-	width: 100%;
-	height: 100%;
-	padding: 1em 0;
-	background: none;
-	margin: 0;
-}
+}*/
 
 
-
-
+/*Container clases*/
 .MainContainer{
 	position:absolute;
-	display:block;
 	left:15%;
 	width: 80%;
 	top:5%;
@@ -93,11 +88,66 @@ p{
 	font-size: 1em;
 }
 
-.MainContainer-Content{
-	display:inline-block;
-	background: yellow;
+/*CSS Me Page*/
+.MeContainer{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display:flex;
+	flex-direction:row;
+	color:white;
 	margin:5%;
+	justify-content:space-around;
+}
 
+.MeContainer-Article{
+	flex:1;
+	padding:1em;
+}
+
+.MeContainer-Info{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	padding: 1em;
+}
+
+.MeContainer-Info-Image{
+	flex:1;
+	text-align: center;
+}
+
+.MeContainer-Info-ImageContainer{
+	margin:1em;
+	border-radius: 50%;
+}
+.MeContainer-Info-Data{
+	flex:1;
+}
+
+/*CSS Studies Page*/
+.StudiesContainer{
+	display:inline-block;
+	color:white;
+	background: none;
+	margin:5%;
+}
+
+/*CSS Portfolio Page*/
+.PortfolioContainer{
+	display:inline-block;
+	color:white;
+	background: none;
+	margin:5%;
+}
+
+/*CSS Contact Page*/
+.ContactContainer{
+	display:inline-block;
+	color:white;
+	background: none;
+	margin:5%;
 }
 
 /*Fonts*/
