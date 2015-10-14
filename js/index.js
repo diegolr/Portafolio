@@ -23,7 +23,23 @@ function loadMeContent(){
 }
 
 function loadStudiesContent(){
-	$( "#main" ).load( "templates/studies.html" );
+	$( "#main" ).load( "templates/studies-nav.html", function(){
+		//Función repetida en studies.js. Esto es debido a que cargamos dinámicamente la página, para lograr que cuando se cargue la página se ejecute una función es necesario ejecutarla en el callback del load. Si la llamamos desde studies.js no sería capaz de ejecutarla justo después de cargarla
+		var buttonExperience = $("[data-button='experience__Left']");
+		var buttonSelfStudy = $("[data-button='self-Study__Mid']");
+		var buttonDegrees = $("[data-button='degrees__Right']");
+		showDegreesContent();
+		function showDegreesContent(){
+			buttonExperience.removeClass("StudiesNavButton__LeftActive StudiesNavButton__MidActiveLeftNoActive");
+			buttonSelfStudy.removeClass("StudiesNavButton__LeftActiveMidNoActive StudiesNavButton__MidActive");
+			buttonDegrees.removeClass("StudiesNavButton__NoActive StudiesNavButton__MidActiveRightNoActive");
+			buttonExperience.addClass("StudiesNavButton__NoActive");
+			buttonSelfStudy.addClass("StudiesNavButton__RightActiveMidNoActive");
+			buttonDegrees.addClass("StudiesNavButton__RightActive");
+			$( "#studies" ).load( "templates/studies/degrees.html" );
+		}
+	} );
+
 	buttonMe.css("background","#91D3DE");
 	buttonStudies.css("background","white");
 	buttonPortfolio.css("background","#91D3DE");
