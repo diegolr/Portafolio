@@ -11,8 +11,13 @@ ul{
 	padding: 0;
 }
 p{
-	margin:0;
+	margin: .5em 0;
 	display:block;
+}
+
+a{
+	color: #A4BEDE;
+	text-decoration: none;
 }
 
 button{
@@ -103,7 +108,7 @@ h2{
 	display:flex;
 	flex-direction:row;
 	color:black;
-	margin:2% 5% 5% 5%;
+	margin:2% 5% 2% 5%;
 	justify-content:space-around;
 }
 
@@ -112,6 +117,7 @@ h2{
 	display:flex;
 	flex-direction:column;
 	padding:1em;
+	width: 60%;
 }
 
 .MeContainer-Article-Me{
@@ -148,7 +154,6 @@ h2{
 }
 
 .MeContainer-Info{
-	flex:1;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -156,6 +161,7 @@ h2{
 	display:flex;
 	flex-direction:column;
 	padding: 1em;
+	width: 40%;
 }
 
 .MeContainer-Info-Image{
@@ -196,7 +202,7 @@ h2{
 	font-size: 1em;
 	border-style: solid;
 	border-color: #A4BEDE;
-	border-width: .71em;
+	border-width: .75em;
 	background: none;
 	color:black;
 	padding: 1.5em 2.5em;
@@ -280,19 +286,11 @@ h2{
 .StudiesContainer-Content{
 	color:black;
 	margin:19% 5% 5% 5%;
-	/*display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display:flex;
-	flex-direction:column;*/
-	
 }
 
 .StudiesContainer-Item{
 	height: 100%;
 	width: 100%;
-	/*flex:1;*/
 }
 
 .StudiesContainer-Item-Header{
@@ -386,7 +384,7 @@ h2{
 .StudiesContainer-Item-logoStudy{
 	vertical-align: middle;
 	width: 35%;
-	margin-top: 2em;
+	margin: 4em 0 2em 0;
 	overflow: hidden;
 	background: none;
 	text-align: center;
@@ -407,6 +405,13 @@ h2{
 	text-align: justify;
 }
 
+/*Experience Page*/
+.StudiesContainer-Experience{
+	margin-top: 2em;
+	width: 100%;
+	background: none;
+	text-align: justify;
+}
 
 /*CSS Portfolio Page*/
 .PortfolioContainer{
