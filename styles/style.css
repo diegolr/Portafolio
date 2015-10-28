@@ -433,19 +433,39 @@ h2{
 .PortfolioContent-Item-Button{
 	background: none;
 	overflow: hidden;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+	border: none;
 }
 
 .PortfolioContent-Item-Image{
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+	
 }
 
 .PortfolioContent-Item-P{
 	margin-top: 2em;
+}
+
+.PortfolioContent-Item-Span{
+	font-size: 150px;
+}
+
+.PortfolioBack{
+	font-size: 32px;
+}
+
+.PortfolioContent-Header{
+	margin-top: 1em;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+.PortfolioContent-Header__p{
+	margin:.5em 0;
+	font-size: 1.2em;
+	background: #A4BEDE;
+}
+
+.PortfolioContent-Text{
+	text-align: justify;
 }
 
 /*CSS Contact Page*/
@@ -483,6 +503,15 @@ h2{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right2:before {
+	content: "\e900";
+}
+.icon-arrow-left2:before {
+	content: "\e901";
+}
+.icon-circle-left:before {
+	content: "\e902";
+}
 .icon-circle-up:before {
 	content: "\e801";
 }
