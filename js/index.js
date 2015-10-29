@@ -15,10 +15,10 @@ buttonContact.on("click", loadContactContent);
 
 function loadMeContent(){
 	$( "#main" ).load( "templates/me.html" );
-	buttonMe.css("background","white");
-	buttonStudies.css("background","#91D3DE");
-	buttonPortfolio.css("background","#91D3DE");
-	buttonContact.css("background","#91D3DE");
+	buttonMe.css("background","rgba(255,255,255,0.8)");
+	buttonStudies.css("background","#DEB887");
+	buttonPortfolio.css("background","#DEB887");
+	buttonContact.css("background","#DEB887");
 	
 }
 
@@ -40,26 +40,26 @@ function loadStudiesContent(){
 		}
 	} );
 
-	buttonMe.css("background","#91D3DE");
-	buttonStudies.css("background","white");
-	buttonPortfolio.css("background","#91D3DE");
-	buttonContact.css("background","#91D3DE");
+	buttonMe.css("background","#DEB887");
+	buttonStudies.css("background","rgba(255,255,255,0.8)");
+	buttonPortfolio.css("background","#DEB887");
+	buttonContact.css("background","#DEB887");
 }
 
 function loadPortfolioContent(){
 	$( "#main" ).load( "templates/portfolio.html" );
-	buttonMe.css("background","#91D3DE");
-	buttonStudies.css("background","#91D3DE");
-	buttonPortfolio.css("background","white");
-	buttonContact.css("background","#91D3DE");
+	buttonMe.css("background","#DEB887");
+	buttonStudies.css("background","#DEB887");
+	buttonPortfolio.css("background","rgba(255,255,255,0.8)");
+	buttonContact.css("background","#DEB887");
 }
 
 function loadContactContent(){
 	$( "#main" ).load( "templates/contact.html" );
-	buttonMe.css("background","#91D3DE");
-	buttonStudies.css("background","#91D3DE");
-	buttonPortfolio.css("background","#91D3DE");
-	buttonContact.css("background","white");
+	buttonMe.css("background","#DEB887");
+	buttonStudies.css("background","#DEB887");
+	buttonPortfolio.css("background","#DEB887");
+	buttonContact.css("background","rgba(255,255,255,0.8)");
 }
 
 })();
