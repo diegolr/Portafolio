@@ -8,36 +8,38 @@ buttonExperience.on("click", showExperienceContent);
 buttonSelfStudy.on("click", showSelfStudyContent);
 buttonDegrees.on("click", showDegreesContent);
 
-function  showExperienceContent(){
+function  showExperienceContent(){	
 	//Primero borramos todas las clases añadidas previamente (o no)
-	buttonExperience.removeClass("StudiesNavButton__MidActiveLeftNoActive StudiesNavButton__NoActive");
-	buttonSelfStudy.removeClass("StudiesNavButton__MidActive StudiesNavButton__RightActiveMidNoActive");
-	buttonDegrees.removeClass("StudiesNavButton__MidActiveRightNoActive StudiesNavButton__RightActive");
+	buttonExperience.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+	buttonSelfStudy.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+	buttonDegrees.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
 	//Añadimos las clases correspondientes dependiendo el botón pulsado
-	buttonExperience.addClass("StudiesNavButton__LeftActive");
-	buttonSelfStudy.addClass("StudiesNavButton__LeftActiveMidNoActive");
+	buttonExperience.addClass("StudiesNavButton__Active");
+	buttonSelfStudy.addClass("StudiesNavButton__NoActive");
 	buttonDegrees.addClass("StudiesNavButton__NoActive");
 	$( "#studies" ).load( "templates/studies/experience.html" );
 
 }
 
 function showSelfStudyContent(){
-	buttonExperience.removeClass("StudiesNavButton__LeftActive StudiesNavButton__NoActive");
-	buttonSelfStudy.removeClass("StudiesNavButton__LeftActiveMidNoActive StudiesNavButton__RightActiveMidNoActive");
-	buttonDegrees.removeClass("StudiesNavButton__NoActive StudiesNavButton__RightActive");
-	buttonExperience.addClass("StudiesNavButton__MidActiveLeftNoActive");
-	buttonSelfStudy.addClass("StudiesNavButton__MidActive");
-	buttonDegrees.addClass("StudiesNavButton__MidActiveRightNoActive");
+	buttonExperience.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+	buttonSelfStudy.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+	buttonDegrees.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+
+	buttonExperience.addClass("StudiesNavButton__NoActive");
+	buttonSelfStudy.addClass("StudiesNavButton__Active");
+	buttonDegrees.addClass("StudiesNavButton__NoActive");
 	$( "#studies" ).load( "templates/studies/self-study.html" );
 }
 
 function showDegreesContent(){
-	buttonExperience.removeClass("StudiesNavButton__LeftActive StudiesNavButton__MidActiveLeftNoActive");
-	buttonSelfStudy.removeClass("StudiesNavButton__LeftActiveMidNoActive StudiesNavButton__MidActive");
-	buttonDegrees.removeClass("StudiesNavButton__NoActive StudiesNavButton__MidActiveRightNoActive");
+	buttonExperience.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+	buttonSelfStudy.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+	buttonDegrees.removeClass("StudiesNavButton__Active StudiesNavButton__NoActive");
+
 	buttonExperience.addClass("StudiesNavButton__NoActive");
-	buttonSelfStudy.addClass("StudiesNavButton__RightActiveMidNoActive");
-	buttonDegrees.addClass("StudiesNavButton__RightActive");
+	buttonSelfStudy.addClass("StudiesNavButton__NoActive");
+	buttonDegrees.addClass("StudiesNavButton__Active");
 	$( "#studies" ).load( "templates/studies/degrees.html" );
 }
 

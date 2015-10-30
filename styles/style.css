@@ -187,86 +187,21 @@ h2{
 	position:relative;
 	font-size: 1em;
 	border-style: solid;
-	border-color: white;
-	border-width: 8px;
-	background: none;
+	border-color:  #DEB887;
+	-webkit-border-radius: 60%;
+	-moz-border-radius: 60%;
+	border-radius: 60%;
+	border-width: 4px;
 	color:black;
 	padding: 1.5em 2.5em;
 	margin:0;
 }
 
-.StudiesNavButton:first-child{
-	right: -1em;
+.StudiesNavButton__Active{
+	background: none;
 }
-
-.StudiesNavButton:last-child{
-	left: -1em;
-}
-
 .StudiesNavButton__NoActive{
-	border-top: none;
-	border-right: none;
-	border-left:none;
-}
-
-.StudiesNavButton__LeftActive{
-	border-bottom: none;
-	-webkit-border-radius: 15px 15px 0 0;
-	-moz-border-radius: 15px 15px 0 0;
-	border-radius: 15px 15px 0 0;
-	z-index: 2;
-}
-
-.StudiesNavButton__LeftActiveMidNoActive{
-	border-top: none;
-	border-right: none;
-	border-left:none;
-	-webkit-border-radius: 0 0 0 15px;
-	-moz-border-radius: 0 0 0 15px;
-	border-radius: 0 0 0 15px;
-}
-
-.StudiesNavButton__MidActive{
-	border-bottom: none;
-	-webkit-border-radius: 15px 15px 0 0;
-	-moz-border-radius: 15px 15px 0 0;
-	border-radius: 15px 15px 0 0;
-	z-index: 2;
-}
-
-.StudiesNavButton__MidActiveLeftNoActive{
-	border-top: none;
-	border-right: none;
-	border-left:none;
-	-webkit-border-radius: 0 0 15px 0;
-	-moz-border-radius: 0 0 15px 0;
-	border-radius: 0 0 15px 0;
-}
-
-.StudiesNavButton__MidActiveRightNoActive{
-	border-top: none;
-	border-right: none;
-	border-left:none;
-	-webkit-border-radius: 0 0 0 15px;
-	-moz-border-radius: 0 0 0 15px;
-	border-radius: 0 0 0 15px;
-}
-
-.StudiesNavButton__RightActive{
-	border-bottom: none;
-	-webkit-border-radius: 15px 15px 0 0;
-	-moz-border-radius: 15px 15px 0 0;
-	border-radius: 15px 15px 0 0;
-	z-index: 2;
-}
-
-.StudiesNavButton__RightActiveMidNoActive{
-	border-top: none;
-	border-right: none;
-	border-left:none;
-	-webkit-border-radius: 0 0 15px 0;
-	-moz-border-radius: 0 0 15px 0;
-	border-radius: 0 0 15px 0;
+	background: #DEB887;
 }
 
 .StudiesContainer-Content{
@@ -424,8 +359,8 @@ h2{
 
 .PortfolioContent-Item{
 	display:block;
-	height: 310px;
-	width: 250px;
+	height: 260px;
+	width: 210px;
 	overflow: hidden;
 	margin-top: 2em;
 	text-align: center;
@@ -445,6 +380,7 @@ h2{
 	margin-top: 2em;
 	font-weight: bold;
 	font-size: 1.2em;
+	border-top: solid black 2px; 
 }
 
 .PortfolioContent-Item-Span{
